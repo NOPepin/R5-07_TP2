@@ -11,9 +11,9 @@ public class PileNPI
         this.pile = new Stack<Double>();
     }
 
-    public void empiler(String s)
+    public void empiler(Double n)
     {
-        this.pile.push(Double.parseDouble(s));
+        this.pile.push(n);
     }
 
     public double depiler()
@@ -24,5 +24,10 @@ public class PileNPI
         }
         
         return this.pile.pop();
+    }
+
+    public String toString()
+    {
+        return Double.toString(this.pile.peek());
     }
 }
